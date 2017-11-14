@@ -1,0 +1,376 @@
+body {
+  background: #fff;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+h1 {
+  margin-top: 20px;
+  font-family: raleway;
+}
+
+.teacherPage {
+  position: absolute;
+  right: 0px;
+  background: orangered;
+  height: 60px;
+  width: 90px;
+  line-height: 60px;
+  border-radius: 100% 0 0 100%;
+  cursor: pointer;
+  box-shadow: 1px 1px 9px 1px;
+  transition: all 1s ease;
+  z-index: 100;
+}
+
+.teacherPage:hover {
+  /*   right: 20px; */
+  width: 120px;
+}
+
+.teacherPage span {
+  padding-left: 15px;
+  font-family: raleway;
+}
+
+.squre {
+  width: 300px;
+  height: 300px;
+  background: orangered;
+  margin: 0 auto;
+  border-radius: 50%;
+  position: relative;
+  /*   box-shadow: 0px 2px 12px 0px; */
+  border: 10px solid #222;
+}
+
+.squre span {
+  position: absolute;
+  top: 47%;
+  left: 49%;
+}
+
+.squre span:nth-child(1) {
+  transform: translate(4em, -6.93em);
+}
+
+.squre span:nth-child(2) {
+  transform: translate(6.93em, -4em);
+}
+
+.squre span:nth-child(3) {
+  transform: translate(8em, 0em);
+}
+
+.squre span:nth-child(4) {
+  transform: translate(6.93em, 4em);
+}
+
+.squre span:nth-child(5) {
+  transform: translate(4em, 6.93em);
+}
+
+.squre span:nth-child(6) {
+  transform: translate(0, 8em);
+}
+
+.squre span:nth-child(7) {
+  transform: translate(-4em, 6.93em);
+}
+
+.squre span:nth-child(8) {
+  transform: translate(-6.93em, 4em);
+}
+
+.squre span:nth-child(9) {
+  transform: translate(-8em, 0);
+}
+
+.squre span:nth-child(10) {
+  transform: translate(-6.93em, -4em);
+}
+
+.squre span:nth-child(11) {
+  transform: translate(-4em, -6.93em);
+}
+
+.squre span:nth-child(12) {
+  transform: translate(-0.3em, -8em);
+}
+
+.squre:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  /*   border: 1px solid #222; */
+}
+
+.hour {
+  position: absolute;
+  width: 3px;
+  height: 70px;
+  background: #222;
+  top: -10%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform-origin: 0.1em 3.2em;
+  animation: hour 43200s linear 0s infinite;
+}
+
+/* @keyframes hour {
+  to {
+    transform: rotate(359deg);
+  }
+} */
+
+.minute {
+  position: absolute;
+  width: 2px;
+  height: 90px;
+  background: #222;
+  top: -14%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform-origin: 0.1em 4.2em;
+  animation: minute 3600s linear 0s infinite;
+}
+
+/* @keyframes minute {
+  to {
+    transform: rotate(359deg);
+  }
+} */
+
+.second {
+  position: absolute;
+  width: 1px;
+  height: 120px;
+  background: #222;
+  top: -14%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform-origin: 0.1em 5.1em;
+  animation: second 60s steps(60, end) 0s infinite;
+}
+
+/* @keyframes second {
+  to {
+    transform: rotate(359deg);
+  }
+} */
+
+#time {
+  color: #222;
+  font-size: 2em;
+  font-family: raleway;
+}
+
+.shade {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: #222;
+  left: 50%;
+  margin-left: -175px;
+  margin-top: -325px;
+  transition: opacity 0.4s, margin 1s, transform 3.5s;
+  border-radius: 20px;
+}
+
+.ques {
+  color: orangered;
+  font-family: raleway;
+  font-size: 1.3em;
+  line-height: 80px;
+}
+
+.shade button {
+  color: orangered;
+  background: #222;
+  font-family: raleway;
+  display: block;
+  position: absolute;
+  left: -10px;
+  right: 0;
+  top: 0;
+  bottom: -30%;
+  margin: auto;
+  width: 70px;
+  height: 30px;
+  border: 1px solid orangered;
+  border-radius: 10px;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.shade button:hover {
+  background: orangered;
+  color: #222;
+}
+
+.remove {
+  margin-left: -600px;
+  opacity: 0;
+  transform: scale(0.3);
+}
+
+.digit1 {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 140px;
+  border: 1px solid orangered;
+  border-radius: 20px;
+}
+
+/* quesiton/interaction part */
+
+.wrapQues {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.wrapQues .que1 .clock1 .squre {
+  transform: scale(0.6);
+}
+
+.wrapQues .que2 .clock2 .squre {
+  transform: scale(0.6);
+}
+
+.wrapQues .que3 .clock3 .squre {
+  transform: scale(0.6);
+}
+
+.reflection textarea {
+  width: 50%;
+  height: 100px;
+}
+
+/* .intera1 button {
+  margin: 30px 0;
+} */
+
+button {
+  background: #222;
+  color: orangered;
+  border: 0.5px solid orangered;
+  height: 30px;
+  width: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+  font-family: raleway;
+}
+
+button:hover {
+  color: #fff;
+}
+
+/* que1 */
+
+.clock1 .squre .hour {
+  transition: all 5s ease-in-out;
+}
+
+.clock1 .squre .minute {
+  transition: all 5s ease-in-out;
+}
+
+.clock1 .squre .second {
+  transition: all 5s ease-in-out;
+}
+
+/* que2 */
+
+.clock2 {
+  position: relative;
+  transition: all 2s ease-in-out;
+}
+
+.hideClock {
+  opacity: 1;
+  transition: all 2s ease-in-out;
+  transform-origin: 50% 50%;
+}
+
+.time2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  /*   top: 47%; */
+  height: 100px;
+  line-height: 100px;
+  opacity: 0;
+  transition: all 2s;
+  font-family: raleway;
+  font-size: 2em;
+  border: 3px dashed orangered;
+  border-radius: 5px;
+}
+
+.show {
+  opacity: 1;
+}
+
+.noShow {
+  opacity: 0;
+}
+
+/* que3 */
+
+.hourHand1 {
+  transition: all 3600s;
+  transform: rotate(720deg);
+}
+
+.minuteHand1 {
+  transition: all 3600s;
+  transform: rotate(8640deg);
+}
+
+.secondHand1 {
+  transition: all 3600s;
+  transform: rotate(518400deg);
+}
+
+.hourHand2 {
+  transition: all 60s;
+  transform: rotate(720deg);
+}
+
+.minuteHand2 {
+  transition: all 60s;
+  transform: rotate(8640deg);
+}
+
+.secondHand2 {
+  transition: all 60s;
+  transform: rotate(518400deg);
+}
+
+.present {
+  width: 70%;
+  margin: 0 auto;
+}

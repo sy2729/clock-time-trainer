@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  text-align: center;
+  background: orangered;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  color: orangered;
+  background: #222;
+
+}
+
+.container h4:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: orangered;
+}
+
+.studentPage {
+  top: 80px;
+  position: absolute;
+  left: 0px;
+  background: #222;
+  height: 60px;
+  width: 90px;
+  line-height: 60px;
+  border-radius: 0 100% 100% 0;
+  cursor: pointer;
+  box-shadow: 1px 1px 9px 1px #222;
+  transition: all 1s ease;
+  z-index: 100;
+}
+
+.studentPage:hover {
+  width: 120px;
+}
+
+.studentPage span {
+  font-family: raleway;
+}
+
+.container2 {
+  width: 70%;
+  margin-left: -35%;
+  position: absolute;
+  left: 50%;
+  margin-top: 20%;
+  transition: all 2s;
+}
+
+.learningObjective {
+  opacity: 0;
+}
+
+.learning {
+  border: 1px solid #222;
+}
+
+.learning p {
+  text-align: left;
+  padding: 0 1em;
+  line-height: 1.5em;
+}
+
+.wrapup {
+  position: relative;
+}
+
+.howDesigned {
+  position: absolute;
+  opacity: 0;
+}
+
+.howUse {
+  opacity: 0;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+.opacity {
+  opacity: 1;
+}
+
+
+/* .container2:nth-child(2) {
+  opacity: 1;
+} */
+
+footer {
+  margin: auto;
+  background: #222;
+  height: 50px;
+  color: orangered;
+  margin-top: 75%;;
+}

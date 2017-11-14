@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>My New Pen!</title>
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.processed.css">
+</head>
+<body>
+    <h1>Clock World</h1>
+<div class="teacherPage"><span><a href="teacherPage.html">Teachers</a></span></div>
+
+<!-- main theme shown in the top -->
+<div class="squre">
+  <span>1</span>
+  <span>2</span>
+  <span>3</span>
+  <span>4</span>
+  <span>5</span>
+  <span>6</span>
+  <span>7</span>
+  <span>8</span>
+  <span>9</span>
+  <span>10</span>
+  <span>11</span>
+  <span>12</span>
+  <div class="hour"></div>
+  <div class="minute"></div>
+  <div class="second"></div>
+</div>
+<div class="shade">
+ <div class="ques">Can You Imagine the Clock from the Digits below?</div>
+  <button>remove the shade</button>
+</div>
+
+<div class="digit1">
+  <p id = "time"></p>
+</div>
+
+
+<!-- three questions with interaction -->
+
+<div class="wrapQues">
+  <div class="que1">
+    <div class="clock1">
+      <div class="squre">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+          <span>11</span>
+          <span>12</span>
+          <div class="hour"></div>
+          <div class="minute"></div>
+          <div class="second"></div>
+      </div>
+    </div>
+    <div class="intera1"> Control the time with Digital number?</div>
+    <input type="number" placeholder="control the hour-hand" class="input1">
+    <input type="number" placeholder="control the minute-hand" class="input2">
+    <input type="number" placeholder="control the second-hand" class="input3"><br>
+    <button class="btn1">submit</button><br>
+  </div>
+  <div class="que2">
+    <div class="clock2">
+      <div class="squre hideClock">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span>10</span>
+        <span>11</span>
+        <span>12</span>
+        <div class="hour hour2"></div>
+        <div class="minute minute2"></div>
+        <div class="second second2"></div>
+      </div>
+        <p class = "time2"></p>
+    </div>
+      
+
+    <div class="intera2">Choose the <strong>Form</strong> of displaying current time</div>
+      <label for="">
+        <input type="radio" name="timeFormat" value="analog" checked > analog
+      </label>
+      <label for="">
+        <input type="radio" name="timeFormat" value="digital"> digital
+      </label>
+  </div>
+  <div class="que3">
+    <div class="clock3">
+      <div class="squre">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span>10</span>
+        <span>11</span>
+        <span>12</span>
+        <div class="hour hour3"></div>
+        <div class="minute minute3"></div>
+        <div class="second second3"></div>
+      </div>
+    </div>
+    <div class="intera3">
+      <label for="">
+        <input type="checkbox" name="chooseType" value="inHour" checked>Show a day in an hour <br>
+      </label>
+      <label for="">
+        <input type="checkbox" name="chooseType" value="inMinute">Show a day in a minute <br>
+      </label>
+      <button class="btnTry">Try it</button>
+      <button class="reset">Reset</button>
+    </div>
+  </div>
+</div>
+
+<div class="reflection">
+  <h3>submit your learning reflection</h3>
+  <textarea name="reflection" id="reflection" cols="30" rows="10"></textarea><br>
+  <button class="btnSub">Submit</button>
+</div>
+
+<div class="present"></div>
+
+
+
+<!-- 
+<input type="radio">
+<input type="text">
+<input type="checkbox">
+<textarea></textarea>
+<select>
+  <option></option>
+</select>
+<button type="button">sulbmit</button> -->
+  <!--
+  
+  <!-- Scripts -->
+  <script src="scripts/index.js"></script>
+</body>
+</html>
